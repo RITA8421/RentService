@@ -1,0 +1,15 @@
+<div>
+
+<form novalidate>
+	RENT VOITURE : <br>
+	<form novalidate>
+	Voitures :
+	<select ng-options="voiture.v_ID for voiture in listeVoitures" ng-model="voitureChoisie">
+	</select>
+	<input type="button" ng-click="selectionVoiture(voitureChoisie)" value="RENT" >
+</form>
+</form>
+
+Pour debuggage : {{vehicule}}
+
+</div>

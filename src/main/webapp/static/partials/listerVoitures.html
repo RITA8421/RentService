@@ -1,0 +1,18 @@
+<div>
+<form novalidate>
+	Voitures :
+	<select ng-options="voiture.v_ID for voiture in listeVoitures" ng-model="voitureChoisie">
+	</select>
+	<input type="button" ng-click="selectionVoiture(voitureChoisie)" value="RENT" >
+</form>
+
+<table>
+  <tr ng-repeat="x in listeVoitures">
+    <td>{{ x.v_ID }}</td>
+    <td>{{ x.platNumber }}</td>
+    <td>{{ x.marque }}</td>
+ </tr>
+</table>
+- voitureChoisie : {{voitureChoisie | json}} 
+<br>
+</div>
